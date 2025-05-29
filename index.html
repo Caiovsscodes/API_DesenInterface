@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Interface</title>
-    <script src=""></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Interface</title>
+
+  <!-- Biblioteca Tailwind CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-gray-100 min h-screen">
-    <section>
-        <nav class="bg-gray-800 p-4">
-            <div class="container mx-auto flex justify-between intens-center">
-                <a class="text-white font-bold text-xl" href="#">Meu site</a>
-                <div>
-                <a class="text-gray-300 houver; text-white mx-2" href="#">Inicio</a>
-                </div>
-            </div>
-        </nav>
-    </section>
-    <section>
-        <form>
-            <input type="text">
-            <input type="email">
-        </form>
-    </section>
-    <section>
-        <table>
-            <thead>
-                <tr>
-                    <th>nome</th>
-                    <th>email</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Caio</td>
-                    <td>caiovictorfamilia14@gmail.com</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-    </body>
+<body class="bg-gray-100 min-h-screen">
+
+  <!-- Barra de navegação superior -->
+  <section>
+    <nav class="bg-gray-800 p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <a class="text-white font-bold text-xl" href="#">Meu site</a>
+        <div>
+          <a class="text-gray-300 hover:text-white mx-2 transition" href="#">Início</a>
+        </div>
+      </div>
+    </nav>
+  </section>
+    <h2>Formulario de Cadastro</h2>
+  <!-- Formulário -->
+  <section class="p-8">
+    <form class="bg-white p-6 rounded-lg shadow-md max-w-md mx-auto space-y-4">
+        
+        <th class="text-left py-3 px-4">Nome</th>
+        <input 
+        type="text"
+        placeholder="Digite seu nome:"
+        class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" />
+      
+       <th class="text-left py-3 px-4">E-mail</th>
+      <input 
+        type="email"
+        placeholder="Digite seu e-mail:"
+        class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" />
+        <button type="submit"
+        class="w-full bg-blue-500 text-white py-3 rounded-md hover:bg-blue-600 transition">
+            Enviar
+        </button>
+    </form>
+  </section>
+</body>
 </html>
